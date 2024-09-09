@@ -1,7 +1,7 @@
 #include<iostream>
  using namespace std;
 
-int main( {
+int main() {
   int num1=0,num2=0,num3=0;
   int sum=0,average=0,difference=0,product=0;
   double quotient=0.0;
