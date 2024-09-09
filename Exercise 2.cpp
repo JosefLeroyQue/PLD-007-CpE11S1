@@ -3,10 +3,16 @@
 
 int main() 
 {
-  int x=4,y=2;
-  int sum,difference,product,remainder;
-  float quotient;
+  int x=0,y=0;
+  int sum=0,difference=0,product=0,remainder=0;
+  float quotient=0;
 
+  cout<<"Enter two integers"<<endl;
+  cout<<"Enter the value of x:";
+  cin>>x;
+  cout<<"Enter the value of y:";
+  cin>>y;
+  
   sum=x+y;
   difference=x-y;
   product=x*y;
