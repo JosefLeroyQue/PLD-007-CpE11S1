@@ -1,0 +1,38 @@
+(a)
+start
+ step A
+  if condition b is true, then 
+   proceed step C
+   loop back to step A
+  else
+   break loop
+proceed step D
+
+(b)
+step D
+ if condition E is true, then
+  proceed to step H
+  proceed to step I
+ else
+  proceed to step F
+   if condition G is true, then
+    proceed to step I
+   else
+    proceed to step K
+
+(c)
+step K
+ if condition L is true, then
+  proceed to step p
+   if condition Q is true, then
+    loop back to step P
+   else
+    break loop
+    proceed to step R
+ else 
+  proceed to step M
+  proceed to step N
+   if condition O is true, then
+    proceed to step R
+   else
+    proceed to next step
