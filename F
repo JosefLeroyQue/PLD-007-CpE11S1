@@ -1,0 +1,39 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int counter = 0; // Initialize counter to zero
+    int grade;       // Variable to hold the grade
+    int total = 0;   // Initialize total to zero
+    float average;   // Variable to hold the average
+
+    // Input the first grade
+    cout << "Enter a grade (-1 to end): ";
+    cin >> grade;
+
+    // While the user has not entered the sentinel
+    while (grade != -1) {
+        // Add this grade into the running total
+        total += grade;
+        // Add one to the grade counter
+        counter++;
+
+        // Input the next grade (possibly the sentinel)
+        cout << "Enter a grade (-1 to end): ";
+        cin >> grade;
+    }
+
+    // If the counter is not equal to zero
+    if (counter != 0) {
+        // Set the average to the total divided by the counter
+        average = static_cast<float>(total) / counter;
+        // Print the average
+        cout << "Average grade is: " << average << endl;
+    } else {
+        // Print “No grades were entered”
+        cout << "No grades were entered." << endl;
+    }
+
+    return 0; // Program ends
+}
