@@ -1,0 +1,65 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int day;
+    cout << "Enter a number (0-6): ";
+    cin >> day;
+
+    // Array of days
+    string daysOfWeek[] = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
+
+    // Check if the input is within the valid range
+    if (day >= 0 && day < 7) {
+        cout << daysOfWeek[day] << endl;
+    } else {
+        cout << "Error, no such day." << endl;
+    }
+
+    return 0;
+}
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    const int SIZE = 8;
+    char chessboard[SIZE][SIZE];
+
+    // Initialize the chessboard with spaces
+    for (int i = 0; i < SIZE; ++i) {
+        for (int j = 0; j < SIZE; ++j) {
+            chessboard[i][j] = ' ';
+        }
+    }
+
+    // Set up the pieces
+    chessboard[0][0] = chessboard[0][7] = 'R'; // Rooks
+    chessboard[0][1] = chessboard[0][6] = 'N'; // Knights
+    chessboard[0][2] = chessboard[0][5] = 'B'; // Bishops
+    chessboard[0][3] = 'Q'; // Queen
+    chessboard[0][4] = 'K'; // King
+    for (int j = 0; j < SIZE; ++j) {
+        chessboard[1][j] = 'P'; // Pawns
+    }
+
+    chessboard[7][0] = chessboard[7][7] = 'r'; // Rooks
+    chessboard[7][1] = chessboard[7][6] = 'n'; // Knights
+    chessboard[7][2] = chessboard[7][5] = 'b'; // Bishops
+    chessboard[7][3] = 'q'; // Queen
+    chessboard[7][4] = 'k'; // King
+    for (int j = 0; j < SIZE; ++j) {
+        chessboard[6][j] = 'p'; // Pawns
+    }
+
+    // Display the chessboard
+    for (int i = 0; i < SIZE; ++i) {
+        for (int j = 0; j < SIZE; ++j) {
+            cout << chessboard[i][j] << ' ';
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
